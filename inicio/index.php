@@ -52,19 +52,19 @@ footer p {
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../../images/img1.jpg" class="d-block w-100" alt="...">
+                    <img src="../../tarea_crudj_proyecto_anterior/images/img1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../../images/img2.jpg" class="d-block w-100" alt="...">
+                    <img src="../../tarea_crudj_proyecto_anterior/images/img2.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../../images/img4.jpg" class="d-block w-100" alt="...">
+                    <img src="../../tarea_crudj_proyecto_anterior/images/img3.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../../images/img5.jpg" class="d-block w-100" alt="...">
+                    <img src="../../tarea_crudj_proyecto_anterior/images/img4.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="../../images/img6.jpg" class="d-block w-100" alt="...">
+                    <img src="../../tarea_crudj_proyecto_anterior/images/img5.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

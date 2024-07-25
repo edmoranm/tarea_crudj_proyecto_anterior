@@ -37,7 +37,7 @@
 <body>
     <h1>ESCUELA DE INFORMATICA</h1>
     <video controls>
-        <source src="../../images/videoplayback.mp4" type="video/mp4">
+        <source src="../../tarea_crudj_proyecto_anterior/images/videoplayback.mp4" type="video/mp4">
     </video>
 </body>
 <?php include_once '../includes/footer.php' ?>

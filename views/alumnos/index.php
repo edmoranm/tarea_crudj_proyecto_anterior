@@ -78,8 +78,8 @@
         </div>
     </div>
 </div>
-<script defer src="#"></script>
-<script defer src="#"></script>
+<script defer src="/tarea_crudjs_proyecto_anterior/src/js/funciones.js"></script>
+<script defer src="/tarea_crudjs_proyecto_anterior/src_js/alumnos/index.js"></script>
 <?php include_once '../../includes/footer.php' ?>
 
    

@@ -1,25 +1,27 @@
-<nav class="navbar fixed-top navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="../inicio/index2.php"><img src="../images/logo.jpg" alt="Logo" width="70" height="40">ESCUELA DE INFORMATICA</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../inicio/index.php"><i class="bi bi-house-fill me-2"></i>INICIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../views/alumnos/index.php"><i class="bi bi-house-fill me-2"></i>ALUMNOS</a>
-          </a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="../views/alumnos/index.php"><i class="bi bi-house-fill me-2"></i>MATERIAS</a>
-        </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link active" aria-current="page" href="../views/alumnos/index.php"><i class="bi bi-house-fill me-2"></i>NOTAS</a>
-          </a>
-        </li>
+<nav class="navbar navbar-light navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarPrincipal"><img src="../../tarea_crudj_proyecto_anterior/images/logo.jpg" alt="Logo" width="70" height="40">
+            <a class="navbar-brand" href="../../tarea_crudj_proyecto_anterior/inicio/index.php">ESCUELA DE INFORMATICA</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../../tarea_crudj_proyecto_anterior/inicio/index2.php">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mantenimientos
+                    </a>
+                    <ul class="dropdown-menu bg-light">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../tarea_crudj_proyecto_anterior/views/alumnos/index.php">ALUMNOS</a>
+                            <a class="nav-link" href="../../tarea_crudj_proyecto_anterior/views/materia/index.php">MATERIA</a>
+                            <a class="nav-link" href="../../tarea_crudj_proyecto_anterior/views/notas/index.php">NOTAS</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
