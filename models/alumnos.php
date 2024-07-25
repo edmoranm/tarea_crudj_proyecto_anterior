@@ -32,7 +32,7 @@ class alumno extends Conexion
 
     public function buscar()
     {
-        $sql = "SELECT * from alumnos where cli_situacion = 1 ";
+        $sql = "SELECT * from alumnos where alum_situacion = 1 ";
 
         if($this->alum_nombre != ''){
             $sql .= " AND alum_nombre like '%$this->alum_nombre%' ";

@@ -1,10 +1,10 @@
 <?php include_once '../../includes/header.php' ?>
 <div class="container">
-    <h1 class="text-center">Formulario de Alumnos</h1>
+<h1 class="text-center title-custom">Formulario de Alumnos</h1>
     <div class="row justify-content-center mb-3">
         <form class="col-lg-8 border bg-light p-3">
-            <input type="hidden" name="cli_id" id="cli_id">
-            <div class="row mb-3">
+            <input type="hidden" name="alum_id" id="alum_id">
+            <div class="row mb-3 ">
                 <div class="col">
                     <label for="alum_nombre">Nombre del alumno</label>
                     <input type="text" name="alum_nombre" id="alum_nombre" class="form-control" required>
@@ -53,12 +53,12 @@
             </div>
         </form>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center ">
         <div class="col-lg-8 table-responsive">
-            <h2 class="text-center">Listado de Alumnos</h2>
+            <h2 class="text-center title-custom">Listado de Alumnos</h2>
             <table class="table table-bordered table-hover" id="tablaAlumnos">
                 <thead>
-                    <tr>
+                    <tr class="title-custom">
                         <th>No.</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
@@ -71,7 +71,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="5">No hay alumnos disponibles</td>
+                        <td colspan="8">No hay alumnos disponibles</td>
                     </tr>
                 </tbody>
             </table>

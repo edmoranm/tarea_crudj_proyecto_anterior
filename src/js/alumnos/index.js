@@ -58,6 +58,7 @@ const getAlumnos = async (alerta = 'si') => {
                     const celda5 = document.createElement('td')
                     const celda6 = document.createElement('td')
                     const celda7 = document.createElement('td')
+                    const celda8 = document.createElement('td')
                     const buttonModificar = document.createElement('button')
                     const buttonEliminar = document.createElement('button')
 
@@ -66,7 +67,7 @@ const getAlumnos = async (alerta = 'si') => {
                     celda3.innerText = alumnos.alum_apellido;
                     celda4.innerText = alumnos.alum_grado;
                     celda5.innerText = alumnos.alum_arma;
-                    celda5.innerText = alumnos.alum_nacionalidad;
+                    celda6.innerText = alumnos.alum_nacionalidad;
 
 
                     buttonModificar.textContent = 'Modificar'
@@ -78,8 +79,8 @@ const getAlumnos = async (alerta = 'si') => {
                     buttonEliminar.addEventListener('click', () => Eliminar(alumnos.alum_id));
 
 
-                    celda6.appendChild(buttonModificar)
-                    celda7.appendChild(buttonEliminar)
+                    celda7.appendChild(buttonModificar)
+                    celda8.appendChild(buttonEliminar)
 
                     tr.appendChild(celda1)
                     tr.appendChild(celda2)
@@ -88,6 +89,7 @@ const getAlumnos = async (alerta = 'si') => {
                     tr.appendChild(celda5)
                     tr.appendChild(celda6)
                     tr.appendChild(celda7)
+                    tr.appendChild(celda8)
                     fragment.appendChild(tr);
 
                     contador++
@@ -97,7 +99,7 @@ const getAlumnos = async (alerta = 'si') => {
                 const tr = document.createElement('tr')
                 const td = document.createElement('td')
                 td.innerText = 'No hay alumnos disponibles'
-                td.colSpan = 5;
+                td.colSpan = 8;
 
                 tr.appendChild(td)
                 fragment.appendChild(tr)
@@ -150,7 +152,7 @@ const guardaralumnos = async (e) => {
         console.log(data);
 
         if (codigo == 1 && respuesta.status == 200) {
-            getalumnos(alerta = 'no');
+            getAlumnos(alerta = 'no');
             //formulario.reset();
         } else {
             console.log(detalle);
