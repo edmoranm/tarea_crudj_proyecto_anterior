@@ -3,7 +3,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarPrincipal"><img src="../../tarea_crudj_proyecto_anterior/images/logo.jpg" alt="Logo" width="70" height="40">
+        <div class="collapse navbar-collapse" id="navbarPrincipal">
             <a class="navbar-brand" href="../../tarea_crudj_proyecto_anterior/inicio/index.php">ESCUELA DE INFORMATICA</a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">

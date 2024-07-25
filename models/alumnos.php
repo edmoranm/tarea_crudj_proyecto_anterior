@@ -1,7 +1,7 @@
 <?php
 require_once 'conexion.php';
 
-class Alumno extends Conexion
+class alumno extends Conexion
 {
     public $alum_id;
     public $alum_nombre;

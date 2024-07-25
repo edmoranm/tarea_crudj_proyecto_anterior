@@ -17,7 +17,7 @@ const getAlumnos = async (alerta = 'si') => {
     const nacionalidad = formulario.alum_nacionalidad.value.trim()
     console.log(nombre, apellido, grado, arma, nacionalidad)
     
-    const url = `/tarea_crudjs_proyecto_anterior/controladores/alumnos/index.php?alum_nombre=${nombre}&alum_apellido=${apellido}&alum_grado=${grado}&alum_arma=${arma}&alum_nacionalidad=${nacionalidad}`
+    const url = `/tarea_crudj_proyecto_anterior/controladores/alumnos/index.php?alum_nombre=${nombre}&alum_apellido=${apellido}&alum_grado=${grado}&alum_arma=${arma}&alum_nacionalidad=${nacionalidad}`
     const config = {
         method: 'GET'
     }
@@ -119,7 +119,7 @@ const guardaralumnos = async (e) => {
     e.preventDefault();
     btnGuardar.disabled = true;
 
-    const url = ''
+    const url = '/tarea_crudj_proyecto_anterior/controladores/alumnos/index.php'
     const formData = new FormData(formulario)
     formData.append('tipo', 1)
     formData.delete('alum_id')
@@ -200,7 +200,7 @@ const modificar = async(e) => {
     e.preventDefault();
     btnModificar.disabled = true;
 
-    const url = '/tarea_crudjs_proyecto_anterior/controladores/alumnos/index.php';
+    const url = '/tarea_crudj_proyecto_anterior/controladores/alumnos/index.php';
     const formData = new FormData(formulario);
     formData.append('tipo', 2);
     formData.append('alum_id', formulario.alum_id.value);
@@ -276,7 +276,7 @@ const modificar = async(e) => {
 }
 
 const Eliminar = async(alum_id) => {
-    const url = '/tarea_crudjs_proyecto_anterior/controladores/alumnos/index.php';
+    const url = '/tarea_crudj_proyecto_anterior/controladores/alumnos/index.php';
     const formData = new FormData();
     formData.append('tipo', 3);
     formData.append('alum_id', alum_id);
