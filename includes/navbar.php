@@ -10,18 +10,14 @@
           <a class="nav-link active" aria-current="page" href="../inicio/index.php"><i class="bi bi-house-fill me-2"></i>INICIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="../views/alumnos/index.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-file-person me-2"></i>ALUMNOS
+          <a class="nav-link active" aria-current="page" href="../views/alumnos/index.php"><i class="bi bi-house-fill me-2"></i>ALUMNOS</a>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-file-person me-2"></i>MATERIAS
-          </a>
+        <a class="nav-link active" aria-current="page" href="../views/alumnos/index.php"><i class="bi bi-house-fill me-2"></i>MATERIAS</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-file-person me-2"></i>NOTAS
+        <a class="nav-link active" aria-current="page" href="../views/alumnos/index.php"><i class="bi bi-house-fill me-2"></i>NOTAS</a>
           </a>
         </li>
     </div>
