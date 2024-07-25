@@ -13,18 +13,18 @@ try {
             switch ($tipo) {
                 case '1':
 
-                    $ejecucion = $amateria->guardar();
+                    $ejecucion = $materia->guardar();
                     $mensaje = "Guardado correctamente";
                     break;
                 case '2':
 
-                    $ejecucion = $amateria->modificar();
+                    $ejecucion = $materia->modificar();
                     $mensaje = "Modificado correctamente";
                     break;
 
                 case '3':
 
-                    $ejecucion = $amateria->eliminar();
+                    $ejecucion = $materia->eliminar();
                     $mensaje = "Eliminado correctamente";
                     break;
 
