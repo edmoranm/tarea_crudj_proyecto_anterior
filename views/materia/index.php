@@ -32,7 +32,7 @@
     <div class="row justify-content-center ">
         <div class="col-lg-8 table-responsive">
             <h2 class="text-center title-custom">Listado de Materias</h2>
-            <table class="table table-bordered table-hover" id="tablaAlumnos">
+            <table class="table table-bordered table-hover" id="tablaMaterias">
                 <thead>
                     <tr class="title-custom">
                         <th>No.</th>
@@ -43,7 +43,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="8">No hay materias disponibles</td>
+                        <td colspan="4">No hay materias disponibles</td>
                     </tr>
                 </tbody>
             </table>

@@ -9,7 +9,7 @@ const formulario = document.querySelector('form')
 btnModificar.parentElement.style.display = 'none'
 btnCancelar.parentElement.style.display = 'none'
 
-const getMateria = async (alerta = 'si') => {
+const getMaterias = async (alerta = 'si') => {
     const nombre = formulario.mat_nombre.value.trim()
     console.log(nombre)
     
@@ -74,10 +74,6 @@ const getMateria = async (alerta = 'si') => {
                     tr.appendChild(celda2)
                     tr.appendChild(celda3)
                     tr.appendChild(celda4)
-                    tr.appendChild(celda5)
-                    tr.appendChild(celda6)
-                    tr.appendChild(celda7)
-                    tr.appendChild(celda8)
                     fragment.appendChild(tr);
 
                     contador++
@@ -102,14 +98,14 @@ const getMateria = async (alerta = 'si') => {
     }
 }
 
-getMateria();
+getMaterias();
 
 
 const guardarMaterias = async (e) => {
     e.preventDefault();
     btnGuardar.disabled = true;
 
-    const url = '/tarea_crudj_proyecto_anterior/controladores/materias/index.php'
+    const url = '/tarea_crudj_proyecto_anterior/controladores/materia/index.php';
     const formData = new FormData(formulario)
     formData.append('tipo', 1)
     formData.delete('mat_id')
@@ -140,7 +136,7 @@ const guardarMaterias = async (e) => {
         console.log(data);
 
         if (codigo == 1 && respuesta.status == 200) {
-            getMateria(alerta = 'no');
+            getMaterias(alerta = 'no');
             //formulario.reset();
         } else {
             console.log(detalle);
@@ -182,7 +178,7 @@ const modificar = async(e) => {
     e.preventDefault();
     btnModificar.disabled = true;
 
-    const url = '/tarea_crudj_proyecto_anterior/controladores/materias/index.php';
+    const url = '/tarea_crudj_proyecto_anterior/controladores/materia/index.php';
     const formData = new FormData(formulario);
     formData.append('tipo', 2);
     formData.append('mat_id', formulario.mat_id.value);
@@ -212,7 +208,7 @@ const modificar = async(e) => {
                 }
             }).fire();
             formulario.reset()
-            getMateria(alerta = 'no');
+            getMaterias(alerta = 'no');
             btnBuscar.parentElement.style.display = ''
             btnGuardar.parentElement.style.display = ''
             btnLimpiar.parentElement.style.display = ''
@@ -258,7 +254,7 @@ const modificar = async(e) => {
 }
 
 const Eliminar = async(mat_id) => {
-    const url = '/tarea_crudj_proyecto_anterior/controladores/materias/index.php';
+    const url = '/tarea_crudj_proyecto_anterior/controladores/materia/index.php';
     const formData = new FormData();
     formData.append('tipo', 3);
     formData.append('mat_id', mat_id);
@@ -286,7 +282,7 @@ const Eliminar = async(mat_id) => {
                     toast.onmouseleave = Swal.resumeTimer;
                 }
             }).fire();
-            getMateria(alerta = 'no');
+            getMaterias(alerta = 'no');
             btnBuscar.parentElement.style.display = ''
             btnGuardar.parentElement.style.display = ''
             btnLimpiar.parentElement.style.display = ''
@@ -333,6 +329,6 @@ const Eliminar = async(mat_id) => {
 
 
 formulario.addEventListener('submit', guardarMaterias)
-btnBuscar.addEventListener('click', getMateria)
+btnBuscar.addEventListener('click', getMaterias)
 btnModificar.addEventListener('click', modificar)
 btnCancelar.addEventListener('click', cancelar)
