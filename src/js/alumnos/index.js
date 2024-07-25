@@ -119,7 +119,7 @@ const guardaralumnos = async (e) => {
     e.preventDefault();
     btnGuardar.disabled = true;
 
-    const url = '/tarea_crudjs_proyecto_anterior/controladores/alumnos/index.php'
+    const url = ''
     const formData = new FormData(formulario)
     formData.append('tipo', 1)
     formData.delete('alum_id')
