@@ -1,4 +1,4 @@
-<?php include_once '#'; ?>
+<?php include_once '../includes/header.php'; ?>
 <style>
 
 
@@ -78,7 +78,7 @@ footer p {
         </div>
     </div>
 
-<?php include_once '#'; ?>
+<?php include_once '../includes/footer.php'; ?>
 </body>
 </html>
 

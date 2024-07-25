@@ -1,4 +1,4 @@
-<?php include_once '#' ?>
+<?php include_once '../includes/header.php' ?>
 <style>
     body {
         margin: 0;
@@ -40,5 +40,5 @@
         <source src="../../images/videoplayback.mp4" type="video/mp4">
     </video>
 </body>
-<?php include_once '#' ?>
+<?php include_once '../includes/footer.php' ?>
 
