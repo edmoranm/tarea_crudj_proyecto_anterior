@@ -28,7 +28,7 @@ try {
             <input type="hidden" name="not_id" id="not_id">
             <div class="row mb-3 ">
                 <div class="col">
-                    <h1>ALUMNO</h1>
+                    <h1>Seleccione el Alumno</h1>
                     <select name="not_alumno" id="not_alumno" class="form-control">
                         <option value="">SELECCIONE...</option>
                         <?php foreach ($alumnos as $key => $alumno) : ?>
@@ -40,7 +40,7 @@ try {
             <h2>Detalle de Materias</h2>
             <div class="row mb-3">
                 <div class="col">
-                    <label for="not_materia">Apellido del Alumno</label>
+                    <label for="not_materia">Seleccione la Materia</label>
                     <select name="not_materia" id="not_materias" class="form-control">
                         <option value="">SELECCIONE...</option>
                         <?php foreach ($materias as $key => $materia) : ?>
@@ -90,7 +90,7 @@ try {
                 </thead>
                 <tbody>
                     <tr>
-                        <td colspan="8">No hay alumnos disponibles</td>
+                        <td colspan="8">No hay notas disponibles</td>
                     </tr>
                 </tbody>
             </table>
@@ -98,7 +98,7 @@ try {
     </div>
 </div>
 <script defer src="/tarea_crudj_proyecto_anterior/src/js/funciones.js"></script>
-<script defer src="/tarea_crudj_proyecto_anterior/src/js/alumnos/index.js"></script>
+<script defer src="/tarea_crudj_proyecto_anterior/src/js/notas/index.js"></script>
 <?php include_once '../../includes/footer.php' ?>
 
    
