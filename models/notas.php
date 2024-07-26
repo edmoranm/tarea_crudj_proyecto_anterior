@@ -19,40 +19,49 @@ class nota extends Conexion
         $this->not_puntos = $args['not_puntos'] ?? '';
         $this->not_resultado = $args['not_resultado'] ?? '';
         $this->not_situacion = $args['not_situacion'] ?? '';
-
     }
 
-      public function guardar(){
+    public function guardar()
+    {
+
+        $this->not_resultado = $this->not_puntos >= 70 ? 'Gano' : 'Perdio';
         $sql = "INSERT INTO notas(not_alumno, not_materia, not_puntos, not_resultado) values ('$this->not_alumno','$this->not_materia', '$this->not_puntos', '$this->not_resultado')";
         $resultado = $this->ejecutar($sql);
-        return $resultado; 
+        return $resultado;
     }
+
 
     public function buscar()
     {
-        $sql = "SELECT * from notas where not_situacion = 1 ";
+        $sql = "SELECT alum_nombre, alum_apellido, mat_nombre, notas.*
+                    FROM notas
+                    INNER JOIN alumnos on not_alumno = alum_id
+                    INNER JOIN materias on not_materia = mat_id
+                    where not_situacion = 1";
 
-        if($this->not_alumno != ''){
-            $sql .= " AND not_alumno like '%$this->not_alumno%' ";
+        if ($this->not_alumno != '') {
+            $sql .= " AND not_alumno = '$this->not_alumno' ";
         }
-        if($this->not_materia != ''){
-            $sql .= " AND not_materia like'%$this->not_materia%' ";
+        if ($this->not_materia != '') {
+            $sql .= " AND not_materia ='$this->not_materia' ";
         }
 
         $resultado = self::servir($sql);
         return $resultado;
     }
 
-    public function modificar(){
+    public function modificar()
+    {
         $sql = "UPDATE notas SET not_alumno = '$this->not_alumno', not_materia = '$this->not_materia', not_puntos = '$this->not_puntos', not_resultado = '$this->not_resultado' WHERE not_id = $this->not_id ";
         $resultado = $this->ejecutar($sql);
         return $resultado;
-    }    
-   
-    public function eliminar(){
+    }
+
+    public function eliminar()
+    {
         $sql = "UPDATE notas SET not_situacion = 0 WHERE not_id = '$this->not_id' ";
         $resultado = $this->ejecutar($sql);
-        return $resultado; 
+        return $resultado;
     }
 
     public function promedio($not_id)
@@ -62,6 +71,4 @@ class nota extends Conexion
         $resultado = self::servir($sql);
         return $resultado;
     }
-
 }
-

@@ -32,7 +32,7 @@ try {
                     <select name="not_alumno" id="not_alumno" class="form-control">
                         <option value="">SELECCIONE...</option>
                         <?php foreach ($alumnos as $key => $alumno) : ?>
-                            <option value="<?= htmlspecialchars($alumno['alum_id']) ?>"><?= htmlspecialchars($alumno['alum_nombre'] . ' ' . $alumno['not_materia']) ?></option>
+                            <option value="<?= htmlspecialchars($alumno['alum_id']) ?>"><?= htmlspecialchars($alumno['alum_grado'] . ' de ' . $alumno['alum_arma'] . ' ' . $alumno['alum_nombre'] . ' ' . $alumno['alum_apellido']) ?></option>
                         <?php endforeach ?>
                     </select>
                 </div>
@@ -77,13 +77,15 @@ try {
     <div class="row justify-content-center ">
         <div class="col-lg-8 table-responsive">
             <h2 class="text-center title-custom">Listado de Alumnos</h2>
-            <table class="table table-bordered table-hover" id="tablaAlumnos">
+            <table class="table table-bordered table-hover" id="tablaNotas">
                 <thead>
                     <tr class="title-custom">
                         <th>No.</th>
-                        <th>Alumno</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
                         <th>Materia</th>
                         <th>Punteo</th>
+                        <th>Resultado</th>
                         <th>Modificar</th>
                         <th>Eliminar</th>
                     </tr>
